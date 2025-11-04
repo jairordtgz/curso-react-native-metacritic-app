@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { View, StyleSheet, Text, Image, Animated } from "react-native";
 export function CharacterCard({character}) {
     return (
-        <View key={character.id} style={styles.card}> 
+        <View key={character.id}> 
         <Image source={{uri: character.image}} style={styles.image}/>
         <Text style={styles.text}> {character.name} - {character.species}</Text>
         <Text style={styles.sub}> {character.status} - {character.gender} </Text>
