@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { View, StyleSheet, Text, Image, Animated } from "react-native";
+import "./global.css"
+
 export function CharacterCard({character}) {
     return (
         <View key={character.id} style={styles.card}> 
